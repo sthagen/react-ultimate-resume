@@ -4,7 +4,7 @@ import { createUseStyles } from 'react-jss';
 import { FormattedMessage } from 'react-intl';
 import { useTransition } from 'react-spring';
 
-import { Tag, Tooltip, Typography } from '@wld/ui';
+import { Tag, Tooltip, Typography } from '@welovedevs/ui';
 
 import { LocationField } from '../../../../../commons/location_field/location_field';
 import { EditDialogField } from '../../../../../commons/edit_dialog_field/edit_dialog_field';
@@ -41,6 +41,7 @@ const LocationPlacesFieldComponent = ({ error, places, addPlace, removePlace }) 
                 classes={{
                     container: classes.locationField
                 }}
+                clearOnSelect
                 variant="flat"
                 onLocationSelected={addPlace}
             />
